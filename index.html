@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07090b">
+  <title>Fresh Island Foods Display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="weather-default">
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-glow"></div>
+    <div class="ambient-cloud cloud-one"></div>
+    <div class="ambient-cloud cloud-two"></div>
+    <div class="rain-layer"></div>
+    <div class="stars-layer"></div>
+  </div>
+  <main class="dashboard" id="dashboard">
+    <section class="left-panel">
+      <div class="logo-wrap">
+        <img src="fresh-island-logo.svg" alt="Fresh Island Foods">
+      </div>
+
+      <div class="clock-block">
+        <div class="clock" id="clock">--:--</div>
+        <div class="accent-line"></div>
+        <div class="weekday" id="weekday">Loading</div>
+        <div class="date" id="date">--</div>
+      </div>
+
+      <div class="location-card glass">
+        <div class="location-row">
+          <span class="location-icon" aria-hidden="true">⌖</span>
+          <span id="location-name">Belfast, Northern Ireland</span>
+        </div>
+        <div class="sun-grid">
+          <div class="sun-item">
+            <span class="sun-symbol">☀</span>
+            <div><small>Sunrise</small><strong id="sunrise">--:--</strong></div>
+          </div>
+          <div class="sun-item">
+            <span class="sun-symbol sunset">☀</span>
+            <div><small>Sunset</small><strong id="sunset">--:--</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather-panel">
+      <div class="current-card glass">
+        <div class="weather-visual">
+          <div class="weather-icon hero-icon" id="current-icon">◌</div>
+        </div>
+
+        <div class="current-main">
+          <div class="temperature"><span id="current-temp">--</span><sup>°C</sup></div>
+          <div class="red-rule"></div>
+          <div class="condition" id="condition">Loading weather</div>
+          <div class="feels">Feels like <span id="feels-like">--</span>°</div>
+        </div>
+
+        <div class="details">
+          <div><span class="detail-icon">≋</span><span id="wind">-- km/h</span></div>
+          <div><span class="detail-icon">◯</span><span>Humidity <b id="humidity">--%</b></span></div>
+          <div><span class="detail-icon">♨</span><span>Pressure <b id="pressure">-- hPa</b></span></div>
+          <div><span class="detail-icon">◉</span><span>Visibility <b id="visibility">-- km</b></span></div>
+        </div>
+      </div>
+
+      <div class="forecast-card glass">
+        <div class="forecast-grid" id="forecast"></div>
+      </div>
+
+      <div class="status-line" id="status">Weather updates automatically</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
