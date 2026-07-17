@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+<defs>
+  <radialGradient id="sun" cx="38%" cy="32%">
+    <stop offset="0" stop-color="#fffbe7"/>
+    <stop offset=".18" stop-color="#fff3a1"/>
+    <stop offset=".5" stop-color="#ffc83d"/>
+    <stop offset=".82" stop-color="#f49a15"/>
+    <stop offset="1" stop-color="#d96d08"/>
+  </radialGradient>
+  <radialGradient id="halo">
+    <stop stop-color="#ffd75e" stop-opacity=".55"/>
+    <stop offset=".5" stop-color="#ffb11f" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#ff9e00" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000" flood-opacity=".28"/></filter>
+</defs>
+<circle cx="160" cy="160" r="112" fill="url(#halo)" filter="url(#blur)"/>
+<g stroke-linecap="round" stroke-width="13" stroke="#ffd460" opacity=".94">
+  <path d="M160 20v34"/><path d="M160 266v34"/>
+  <path d="M20 160h34"/><path d="M266 160h34"/>
+  <path d="M61 61l24 24"/><path d="M235 235l24 24"/>
+  <path d="M259 61l-24 24"/><path d="M85 235l-24 24"/>
+</g>
+<circle cx="160" cy="160" r="78" fill="url(#sun)" filter="url(#shadow)"/>
+<ellipse cx="133" cy="124" rx="25" ry="18" fill="#fff" opacity=".30"/>
+<ellipse cx="183" cy="195" rx="39" ry="16" fill="#b96000" opacity=".11"/>
+</svg>

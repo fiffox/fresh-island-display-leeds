@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+<defs>
+  <linearGradient id="cloud" x1=".15" y1=".05" x2=".8" y2=".95"><stop stop-color="#fff"/><stop offset=".38" stop-color="#e6edf5"/><stop offset=".76" stop-color="#b1bdcc"/><stop offset="1" stop-color="#7d8b9e"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#000" flood-opacity=".36"/></filter>
+</defs>
+<g filter="url(#shadow)">
+  <ellipse cx="178" cy="171" rx="129" ry="60" fill="url(#cloud)"/>
+  <circle cx="82" cy="173" r="50" fill="url(#cloud)"/>
+  <circle cx="171" cy="111" r="77" fill="url(#cloud)"/>
+  <circle cx="273" cy="160" r="64" fill="url(#cloud)"/>
+  <path d="M71 166c70-38 177-44 246-8" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" opacity=".33"/>
+</g>
+<g stroke="#c9efff" stroke-width="6" stroke-linecap="round" filter="url(#shadow)">
+  <g transform="translate(96 263)"><path d="M0-30v60M-26-15l52 30M26-15l-52 30"/></g>
+  <g transform="translate(180 276)"><path d="M0-30v60M-26-15l52 30M26-15l-52 30"/></g>
+  <g transform="translate(264 263)"><path d="M0-30v60M-26-15l52 30M26-15l-52 30"/></g>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320">
+<defs>
+  <linearGradient id="moon" x1=".1" y1=".1" x2=".9" y2=".9"><stop stop-color="#fff"/><stop offset=".4" stop-color="#dfe8fa"/><stop offset="1" stop-color="#7183aa"/></linearGradient>
+  <linearGradient id="cloud" x1=".15" y1=".05" x2=".78" y2=".95"><stop stop-color="#fbfdff"/><stop offset=".4" stop-color="#dbe3ed"/><stop offset=".75" stop-color="#aeb9c8"/><stop offset="1" stop-color="#778598"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#000" flood-opacity=".38"/></filter>
+</defs>
+<path d="M183 151A78 78 0 1 1 154 34a62 62 0 1 0 29 117Z" fill="url(#moon)" filter="url(#shadow)"/>
+<circle cx="63" cy="55" r="5" fill="#fff"/><circle cx="238" cy="48" r="4" fill="#fff"/><circle cx="278" cy="110" r="6" fill="#fff" opacity=".8"/>
+<g filter="url(#shadow)">
+  <ellipse cx="203" cy="216" rx="119" ry="58" fill="url(#cloud)"/>
+  <circle cx="110" cy="216" r="49" fill="url(#cloud)"/>
+  <circle cx="190" cy="161" r="72" fill="url(#cloud)"/>
+  <circle cx="276" cy="205" r="58" fill="url(#cloud)"/>
+  <path d="M100 205c58-34 150-40 207-8" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".26"/>
+</g>
+</svg>

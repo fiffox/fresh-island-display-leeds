@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+<defs>
+  <linearGradient id="cloud" x1=".15" y1=".05" x2=".8" y2=".95"><stop stop-color="#f9fbff"/><stop offset=".35" stop-color="#dce4ee"/><stop offset=".72" stop-color="#a1adbd"/><stop offset="1" stop-color="#667486"/></linearGradient>
+  <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b7e8ff"/><stop offset=".45" stop-color="#4db9ef"/><stop offset="1" stop-color="#1677c4"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#000" flood-opacity=".4"/></filter>
+</defs>
+<g filter="url(#shadow)">
+  <ellipse cx="178" cy="179" rx="129" ry="60" fill="url(#cloud)"/>
+  <circle cx="82" cy="181" r="50" fill="url(#cloud)"/>
+  <circle cx="171" cy="119" r="77" fill="url(#cloud)"/>
+  <circle cx="273" cy="168" r="64" fill="url(#cloud)"/>
+  <path d="M70 174c68-39 176-45 247-8" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" opacity=".28"/>
+</g>
+<g fill="url(#drop)" filter="url(#shadow)">
+  <path d="M95 232c0 20-15 34-32 34s-31-14-31-31c0-16 22-48 31-61 10 14 32 42 32 58Z" transform="scale(.55) translate(95 205)"/>
+  <path d="M95 232c0 20-15 34-32 34s-31-14-31-31c0-16 22-48 31-61 10 14 32 42 32 58Z" transform="scale(.55) translate(280 205)"/>
+  <path d="M95 232c0 20-15 34-32 34s-31-14-31-31c0-16 22-48 31-61 10 14 32 42 32 58Z" transform="scale(.55) translate(465 205)"/>
+</g>
+</svg>

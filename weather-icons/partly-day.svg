@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320">
+<defs>
+  <radialGradient id="sun" cx=".35" cy=".3"><stop stop-color="#fffde5"/><stop offset=".22" stop-color="#fff0a0"/><stop offset=".56" stop-color="#ffc13a"/><stop offset="1" stop-color="#e9820c"/></radialGradient>
+  <linearGradient id="cloud" x1=".2" y1=".05" x2=".75" y2=".95"><stop stop-color="#fff"/><stop offset=".34" stop-color="#edf3f8"/><stop offset=".7" stop-color="#c6d1de"/><stop offset="1" stop-color="#8f9caf"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#000" flood-opacity=".34"/></filter>
+  <filter id="sunshadow"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#b96a00" flood-opacity=".28"/></filter>
+</defs>
+<g opacity=".95">
+  <circle cx="126" cy="103" r="65" fill="url(#sun)" filter="url(#sunshadow)"/>
+  <g stroke="#ffd154" stroke-width="10" stroke-linecap="round">
+    <path d="M126 18v22"/><path d="M126 166v22"/><path d="M41 103h22"/><path d="M189 103h22"/>
+    <path d="M66 43l15 15"/><path d="M171 148l15 15"/><path d="M186 43l-15 15"/>
+  </g>
+</g>
+<g filter="url(#shadow)">
+  <ellipse cx="202" cy="213" rx="119" ry="58" fill="url(#cloud)"/>
+  <circle cx="110" cy="213" r="49" fill="url(#cloud)"/>
+  <circle cx="190" cy="158" r="72" fill="url(#cloud)"/>
+  <circle cx="275" cy="202" r="58" fill="url(#cloud)"/>
+  <path d="M100 204c55-36 144-45 206-10" fill="none" stroke="url(#edge)" stroke-width="11" stroke-linecap="round" opacity=".55"/>
+</g>
+</svg>
